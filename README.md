@@ -1,50 +1,71 @@
-# Welcome to your Expo app 👋
+ # Expense Tracker App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple **React Native** Expense Tracker app to manage personal expenses, set monthly budgets, and visualize spending categories.
 
-## Get started
+---
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+- Add, edit, and delete expenses.
+- Assign categories to expenses (Food, Transport, Shopping, Bills, Other).
+- Optional notes for each expense.
+- Track totals: Today, This Week, and This Month.
+- Set and monitor monthly budget; receive alerts if exceeded.
+- Filter expenses by category and search notes.
+- Sort expenses by latest or highest amount.
+- Visualize category spending using a Pie Chart.
+- Manage categories (add or delete) in Settings.
+- Clear all data if needed.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Screens
 
-In the output, you'll find options to open the app in a
+1. **Add Expense**: Input amount, category, and optional note.  
+2. **Home**: Shows expense totals, category breakdown, search/filter, and list of expenses.  
+3. **Settings**: Manage categories and clear all data.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Installation
 
-## Get a fresh project
+1. Clone the repository:
 
-When you're ready, run:
+git clone https://github.com/<your-username>/expense-tracker-app.git
+cd expense-tracker-app
 
-```bash
-npm run reset-project
-```
+Install dependencies:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+bash
+Copy code
+npm install
+Start the app:
 
-## Learn more
+bash
+Copy code
+npx expo start
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+2. Dependencies
+React Native
+Expo Router
+AsyncStorage
+React Native Picker
+React Native Chart Kit
 
-## Join the community
+3.File Structure
+bash
+Copy code
+/expense-tracker-app
+├─ App.js
+├─ screens/
+│  ├─ app.js
+│  ├─ add.js
+│  └─ Setting.js
+├─ components/
+├─ assets/
+├─ package.json
+└─ README.md
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Author
+Roopa S 
